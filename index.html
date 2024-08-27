@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    
+    <title>Decodificador</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="assets/logo.png">
+    </div>
+
+    <div class="caixa">
+        <textarea class="caixa__texto" name="texto__plano" placeholder="Digite seu texto..."></textarea>
+        <div class="caixa__aviso">
+            <img src="assets/bi_exclamation-circle-fill.png" alt="ponto de exclamação">
+            <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="caixa__botoes">
+            <button class="caixa__botoes" id="criptografar">Criptografar</button>
+            <button class="caixa__botoes" id="descriptografar">Descriptografar</button>
+        </div>
+    </div>
+
+    <div class="resultado">
+        <div class="resultado__texto">
+            <!-- O código codificado apareça aqui -->
+            <p id="texto__cifrado"></p>
+            <div class="resultado__aviso">
+                <img src="/assets/High quality products 1 1.png" alt="menina olhando diamante">
+                <div>
+                    <p id="mensagem1">Nenhuma mensagem encontrada</p>
+                    <p id="mensagem2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+        </div>
+        <button class="caixa__botoes" id="copiar">Copiar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
